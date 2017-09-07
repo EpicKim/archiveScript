@@ -11,7 +11,6 @@ uKey=""
 #蒲公英apiKey
 apiKey=""
 
-
 #ipa导出路径
 ipaExportPath="${cachePath}${target}"
 #xcarchive缓存路径(随便填一个,可以保存下来打不同的证书)
@@ -30,7 +29,7 @@ git reset --hard
 git pull origin $gitBranchName
 
 pod install
-
+#  更新carthage
 # carthage update --platform iOS
 xcodebuild archive -workspace lottery.xcworkspace -list
 xcodebuild archive -workspace lottery.xcworkspace -scheme $target -configuration "Release" -archivePath $xcarchivePath
