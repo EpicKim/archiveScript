@@ -47,3 +47,5 @@ https://www.pgyer.com/apiv1/app/upload
 echo "蒲公英网站上的APP已更新，欢迎更新.下载地址：https://www.pgyer.com/my" | mail -s "ipa更新" xx@163.com
 
 say "打包完毕"
+
+logout
