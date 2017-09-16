@@ -28,6 +28,7 @@ git reset --hard
 #拉取最新代码
 git pull origin $gitBranchName
 
+#安装pods
 pod install
 #  更新carthage
 # carthage update --platform iOS
@@ -45,6 +46,7 @@ https://www.pgyer.com/apiv1/app/upload
 # send email 邮件通知同事让他们之间去下载
 echo "蒲公英网站上的APP已更新，欢迎更新.下载地址：https://www.pgyer.com/my" | mail -s "ipa更新" xx@163.com
 
+#通知
 say "打包完毕"
 
 exit
